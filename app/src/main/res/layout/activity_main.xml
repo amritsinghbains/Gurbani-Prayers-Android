@@ -1,157 +1,173 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tableLayout1"
     android:layout_width="fill_parent"
-    android:layout_height="720dp"
-    android:orientation="vertical"
-    android:layout_weight="2"
-    >
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_horizontal_margin">
 
+    <TableRow
+        android:layout_height="0dp"
+        android:layout_weight="1">
 
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="0px"
-        android:layout_weight="2"
-        android:orientation="horizontal" >
-
-        <Button
+        <SeekBar
+            android:id="@+id/seekBar"
             android:layout_width="0dp"
-            android:layout_height="180dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:weightSum="1"
+
+            />
+
+        <ImageButton
+            android:id="@+id/playpausebutton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@android:color/white"
+            android:onClick="onClick"
+            android:scaleType="fitXY"
+            android:src="@android:drawable/ic_media_play"
+            android:weightSum="1" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+        <ImageButton
             android:id="@+id/japjisahib"
-            android:layout_column="0"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:scaleType="fitCenter"
-            android:paddingTop="8dp"
+            android:adjustViewBounds="true"
             android:background="@android:color/white"
             android:onClick="onClick"
-            android:text="j"
-            android:textSize="130dp" />
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="180dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/japjisahib"
+            android:weightSum="1" />
+
+        <ImageButton
             android:id="@+id/jaapsahib"
-            android:layout_column="0"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@android:color/white"
+            android:onClick="onClick"
+            android:scaleType="fitCenter"
             android:src="@drawable/jaapsahib"
-            android:layout_weight="1"
-            android:scaleType="fitCenter"
-            android:paddingTop="8dp"
-            android:background="@android:color/white"
-            android:onClick="onClick"
-            android:text="jw"
-            android:textSize="130dp" />
+            android:weightSum="1" />
 
-    </LinearLayout>
+    </TableRow>
 
+    <TableRow
+        android:layout_height="0dp"
+        android:layout_weight="1">
 
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="0px"
-        android:layout_weight="2"
-        android:orientation="horizontal" >
-
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="180dp"
+        <ImageButton
             android:id="@+id/tavparsadsavaiye"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
             android:layout_column="0"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@android:color/white"
+            android:onClick="onClick"
+            android:paddingTop="8dp"
+            android:scaleType="fitCenter"
             android:src="@drawable/tavparsadsavaiye"
-            android:layout_weight="1"
-            android:scaleType="fitCenter"
-            android:paddingTop="8dp"
-            android:background="@android:color/white"
-            android:onClick="onClick"
-            android:text="q"
-            android:textSize="130dp" />
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="180dp"
+            android:weightSum="1" />
+
+        <ImageButton
             android:id="@+id/chaupaisahib"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
             android:layout_column="0"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@android:color/white"
+            android:onClick="onClick"
+            android:paddingTop="8dp"
+            android:scaleType="fitCenter"
             android:src="@drawable/chaupaisahib"
-            android:layout_weight="1"
-            android:scaleType="fitCenter"
-            android:paddingTop="8dp"
-            android:background="@android:color/white"
-            android:onClick="onClick"
-            android:text="c"
-            android:textSize="130dp" />
+            android:weightSum="1" />
 
-    </LinearLayout>
+    </TableRow>
 
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="0px"
-        android:layout_weight="2"
-        android:orientation="horizontal" >
+    <TableRow
+        android:layout_height="0dp"
+        android:layout_weight="1">
 
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="180dp"
+        <ImageButton
             android:id="@+id/anandsahib"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
             android:layout_column="0"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@android:color/white"
+            android:onClick="onClick"
+            android:paddingTop="8dp"
+            android:scaleType="fitCenter"
             android:src="@drawable/anandsahib"
-            android:layout_weight="1"
-            android:scaleType="fitCenter"
-            android:paddingTop="8dp"
-            android:background="@android:color/white"
-            android:onClick="onClick"
-            android:text="A"
-            android:textSize="130dp" />
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="180dp"
+            android:weightSum="1" />
+
+        <ImageButton
             android:id="@+id/rehraassahib"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
             android:layout_column="0"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@android:color/white"
+            android:onClick="onClick"
+            android:paddingTop="8dp"
+            android:scaleType="fitCenter"
             android:src="@drawable/rehraassahib"
-            android:layout_weight="1"
-            android:scaleType="fitCenter"
-            android:paddingTop="8dp"
-            android:background="@android:color/white"
-            android:onClick="onClick"
-            android:text="r"
-            android:textSize="130dp" />
+            android:weightSum="1" />
 
-    </LinearLayout>
+    </TableRow>
 
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="0px"
-        android:layout_weight="2"
-        android:orientation="horizontal" >
+    <TableRow
+        android:layout_height="0dp"
+        android:layout_weight="1">
 
-
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="180dp"
+        <ImageButton
             android:id="@+id/kirtansohaila"
-            android:layout_column="0"
-            android:src="@drawable/kirtansohaila"
-            android:layout_weight="1"
-            android:scaleType="fitCenter"
-            android:paddingTop="8dp"
-            android:background="@android:color/white"
-            android:onClick="onClick"
-            android:text="k"
-            android:textSize="130dp" />
-        <Button
             android:layout_width="0dp"
-            android:layout_height="180dp"
-            android:id="@+id/sukhmanisahib"
+            android:layout_height="match_parent"
             android:layout_column="0"
-            android:src="@drawable/sukhmanisahib"
             android:layout_weight="1"
-            android:scaleType="fitCenter"
-            android:paddingTop="8dp"
+            android:adjustViewBounds="true"
             android:background="@android:color/white"
             android:onClick="onClick"
-            android:text="s"
-            android:textSize="130dp" />
+            android:paddingTop="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/kirtansohaila"
+            android:weightSum="1" />
+
+        <ImageButton
+            android:id="@+id/sukhmanisahib"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="0"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@android:color/white"
+            android:onClick="onClick"
+            android:paddingTop="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/sukhmanisahib"
+            android:weightSum="1" />
 
 
-    </LinearLayout>
+    </TableRow>
 
-</LinearLayout>
-</ScrollView>
+
+</TableLayout>
